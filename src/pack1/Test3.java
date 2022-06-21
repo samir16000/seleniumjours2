@@ -14,7 +14,8 @@ public class Test3 {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize(); // maximiser l'affichage de la fenetre
 		
-		//WebElement username = driver.findElement(By.id("txtUsername"));
+		//WebElement username = driver.findElement(By.id("txtUsername"));localiser l'lelement, le champ texte username,
+		//qui est identifié par un id, et on la stocker ds une variable username qui es de type web element
 		//username.sendKeys("Admin");
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.name("txtPassword")).sendKeys("admin123");
